@@ -1,0 +1,71 @@
+@mixin max-width($res){
+  @media only screen and ( max-width: $res )
+  {
+    @content;
+  }
+}
+
+@include max-width(992px){
+
+}
+@include max-width(768px){
+    .navbar-inverse .btns{
+        margin-top: 23px;
+        margin-right: 23px;
+    }
+    .nav_logo{
+        padding: 6px 15px;
+    }
+    .navbar-inverse .btns:focus,.navbar-inverse .btns:hover{
+        background: none;
+    }
+    .container>.navbar-header{
+        margin: 0;
+    }
+    .container>.navbar-collapse{
+        margin: 0;
+        padding: 0;
+        max-height: none;
+    }
+    .navbar-inverse{
+        .navbar-nav{
+            margin: 0;
+          li{
+              width: 100%;
+              overflow: hidden;
+              text-align: left;
+              height: 50px;
+              margin: 0;
+              a{
+                  line-height: 50px;
+                  color: #222222;
+                  font-size: 16px;
+                  padding-left: 30px;
+              }
+          }
+          li.on{
+              background-color: transparent;
+              a{
+                  color: #222222;
+              }
+          }
+          li:hover{
+              background-color: #529824;
+              a{
+                  color: #FFFFFF;
+              }
+              >dl{
+                  display: none;
+              }
+          }      
+        }
+        .need{
+              width: 100px;
+              text-align: center;
+              height: 80px;
+              line-height: 80px;
+              color: #ff0000;
+              font-size: 16px;
+          }
+    }
+}
