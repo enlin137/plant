@@ -25,11 +25,19 @@
       text-align: left;
       height: 50px;
       margin: 0; }
-      .navbar-inverse .navbar-nav li a {
+      .navbar-inverse .navbar-nav li > a {
         line-height: 50px;
         color: #222222;
         font-size: 16px;
         padding-left: 30px; }
+      .navbar-inverse .navbar-nav li > dl {
+        height: auto;
+        position: relative;
+        background-color: #FFFFFF; }
+        .navbar-inverse .navbar-nav li > dl dd {
+          width: 100%; }
+          .navbar-inverse .navbar-nav li > dl dd a {
+            color: #222222; }
     .navbar-inverse .navbar-nav li.on {
       background-color: transparent; }
       .navbar-inverse .navbar-nav li.on a {

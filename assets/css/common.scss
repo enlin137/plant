@@ -4,6 +4,7 @@ $baseColor:#529824;
 body{
     font-family: "微软雅黑";
 }
+li{list-style: none;}
 a:hover,a:focus{text-decoration: none;}
 .navbar{
     min-height: 100px;
@@ -97,4 +98,20 @@ a:hover,a:focus{text-decoration: none;}
           color: #ff0000;
           font-size: 18px;
       }
+}
+
+
+//轮播图
+.banner {
+    width: 100%; 
+    position: relative; 
+    overflow: auto;
+    margin-top: 100px;
+    li{
+        float: left;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
 }

@@ -2,6 +2,9 @@
 body {
   font-family: "微软雅黑"; }
 
+li {
+  list-style: none; }
+
 a:hover, a:focus {
   text-decoration: none; }
 
@@ -79,5 +82,16 @@ a:hover, a:focus {
   margin: 0 5px;
   color: #ff0000;
   font-size: 18px; }
+
+.banner {
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  margin-top: 100px; }
+  .banner li {
+    float: left;
+    width: 100%; }
+    .banner li img {
+      width: 100%; }
 
 /*# sourceMappingURL=common.css.map */

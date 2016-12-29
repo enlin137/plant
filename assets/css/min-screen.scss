@@ -29,18 +29,30 @@
     }
     .navbar-inverse{
         .navbar-nav{
-            margin: 0;
+          margin: 0;
           li{
               width: 100%;
               overflow: hidden;
               text-align: left;
               height: 50px;
               margin: 0;
-              a{
+              >a{
                   line-height: 50px;
                   color: #222222;
                   font-size: 16px;
                   padding-left: 30px;
+              }
+              >dl{
+                  height: auto;
+                  position: relative;
+                  background-color: #FFFFFF;
+                  dd{
+                      width: 100%;
+                      a{
+                          color: #222222;
+                      }
+     
+                  }
               }
           }
           li.on{
