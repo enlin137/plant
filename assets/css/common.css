@@ -64,16 +64,14 @@ a:hover, a:focus {
       border-bottom: #529824 4px solid; }
       .navbar-inverse .navbar-nav li > dl dd:hover a {
         color: #529824; }
-.navbar-inverse .navbar-nav li.on {
+.navbar-inverse .navbar-nav li.on > a {
+  color: #FFFFFF;
   background-color: #529824; }
-  .navbar-inverse .navbar-nav li.on a {
-    color: #FFFFFF; }
-.navbar-inverse .navbar-nav li:hover {
+.navbar-inverse .navbar-nav li:hover > a {
+  color: #FFFFFF;
   background-color: #529824; }
-  .navbar-inverse .navbar-nav li:hover > a {
-    color: #FFFFFF; }
-  .navbar-inverse .navbar-nav li:hover > dl {
-    display: block; }
+.navbar-inverse .navbar-nav li:hover > dl {
+  display: block; }
 .navbar-inverse .need {
   width: 100px;
   text-align: center;
@@ -86,12 +84,10 @@ a:hover, a:focus {
 .banner {
   width: 100%;
   position: relative;
-  overflow: auto;
-  margin-top: 100px; }
-  .banner li {
-    float: left;
+  overflow: hidden;
+  margin-top: 100px;
+  overflow: hidden; }
+  .banner .swiper-slide img {
     width: 100%; }
-    .banner li img {
-      width: 100%; }
 
 /*# sourceMappingURL=common.css.map */

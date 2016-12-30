@@ -73,16 +73,16 @@ a:hover,a:focus{text-decoration: none;}
               }
           }
       }
-      li.on{
-          background-color: $baseColor;
-          a{
-              color: #FFFFFF;
-          }
-      }
-      li:hover{
-          background-color: #529824;
+      li.on{         
           >a{
               color: #FFFFFF;
+              background-color: $baseColor;
+          }
+      }
+      li:hover{         
+          >a{
+              color: #FFFFFF;
+              background-color: $baseColor;
           }
           >dl{
               display: block;
@@ -105,13 +105,12 @@ a:hover,a:focus{text-decoration: none;}
 .banner {
     width: 100%; 
     position: relative; 
-    overflow: auto;
+    overflow: hidden;
     margin-top: 100px;
-    li{
-        float: left;
-        width: 100%;
+    overflow: hidden;
+    .swiper-slide{
         img{
             width: 100%;
         }
-    }
+    }  
 }

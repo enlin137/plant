@@ -7,14 +7,16 @@
     <title>易植园艺</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="assets/lib/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/swiper.min.css"/>
     <link rel="stylesheet" href="assets/css/common.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/min-screen.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/min-screen.css"/>  
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="assets/lib/jquery.min.js" ></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="assets/lib/bootstrap.min.js" ></script>
+    <script src="assets/lib/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="assets/lib/unslider-min.js" ></script>
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,7 +44,7 @@
     		<div class="collapse navbar-collapse nav_box" id="nav">
     				<ul class="nav navbar-nav">
     					<li class="on"><a href="#">首页</a></li>
-    					<li><a href="javascript:void(0);">主营业务</a>
+    					<li><a href="javascript:void(0);">主营业务<span class="icon visible-xs-inline-block">∨</span></a>
     						<dl>
     							<dd><a href="#">植物租赁</a></dd>
     							<dd><a href="#">植物租赁</a></dd>
@@ -50,7 +52,14 @@
     							<dd><a href="#">植物租赁</a></dd>
     						</dl>
     					</li>
-    					<li><a href="#">产品展示</a></li>
+    					<li><a href="javascript:void(0);">产品展示<span class="icon visible-xs-inline-block">∨</span></a>
+    						<dl>
+    							<dd><a href="#">sads</a></dd>
+    							<dd><a href="#">sdsd</a></dd>
+    							<dd><a href="#">sdsd</a></dd>
+    							<dd><a href="#">sdsd</a></dd>
+    						</dl>
+    					</li>
     					<li><a href="#">成功案例</a></li>
     					<li><a href="#">新闻中心</a></li>
     					<li class="hidden-sm"><a href="#">公司简介</a></li>
@@ -64,13 +73,20 @@
     <!--导航部分-->
     
     <!--轮播图-->
-    <div class="banner">
-	    <ul>
-	        <li><a href="#"><img src="assets/images/banner.jpg"/></a></li>
-	        <li><a href="#"><img src="assets/images/banner.jpg"/></a></li>
-	        <li><a href="#"><img src="assets/images/banner.jpg"/></a></li>
-	    </ul>
+	<div class="swiper-container banner">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide"><a href="#"><img src="assets/images/banner.jpg"/></a></div>
+	        <div class="swiper-slide"><a href="#"><img src="assets/images/banner.jpg"/></a></div>
+	        <div class="swiper-slide"><a href="#"><img src="assets/images/banner.jpg"/></a></div>
+	    </div>
+	    <!-- 如果需要分页器 -->
+	    <div class="swiper-pagination"></div>
+	    
+	    <!-- 如果需要导航按钮 -->
+	    <div class="swiper-button-prev hidden-xs"></div>
+	    <div class="swiper-button-next hidden-xs"></div>
 	</div>
     <!--轮播图-->
+    
   </body>
 </html>
