@@ -63,6 +63,19 @@
     height: 80px;
     line-height: 80px;
     color: #ff0000;
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .index_news .box .txt {
+    width: 94%; }
+    .index_news .box .txt .name {
+      width: 100%; }
+    .index_news .box .txt .time {
+      float: left;
+      margin-top: 10px; }
+    .index_news .box .txt .tag {
+      margin-top: 20px; }
+
+  .index_tel span {
+    font-size: 40px; } }
 
 /*# sourceMappingURL=min-screen.css.map */

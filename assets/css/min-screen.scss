@@ -95,4 +95,27 @@ $baseColor:#529824;
               font-size: 16px;
           }
     }
+    
+    .index_news{
+        .box{
+           .txt{
+                width: 94%;
+                .name{
+                    width: 100%;
+                }
+                .time{
+                    float: left;
+                    margin-top: 10px;
+                }
+                .tag{
+                    margin-top: 20px;
+                }
+            } 
+        }      
+    }
+    .index_tel{
+        span{
+            font-size: 40px;
+        }
+    }
 }
