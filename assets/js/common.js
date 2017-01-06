@@ -1,5 +1,7 @@
 
 $(document).ready(function () {
+	
+	//轮播
 	var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     autoplay:3000,
@@ -28,4 +30,17 @@ $(document).ready(function () {
 		}
 		
 	});
+	
+	//返回顶部
+	$("#go_top").click(function () {
+		$("body").animate({scrollTop:0},500)
+	});
+	
+	//需求弹框
+	$(".need_btn").click(function () {
+		$(".need_box").show();
+	});
+	$(".need_box .close,.need_bg").click(function () {
+		$(".need_box").hide();
+	})
 })

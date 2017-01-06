@@ -78,6 +78,7 @@
 	        <div class="swiper-slide"><a href="#"><img src="assets/images/banner.jpg"/></a></div>
 	        <div class="swiper-slide"><a href="#"><img src="assets/images/banner.jpg"/></a></div>
 	        <div class="swiper-slide"><a href="#"><img src="assets/images/banner.jpg"/></a></div>
+	        <div class="swiper-slide"><a href="#"><img src="assets/images/banner.jpg"/></a></div>
 	    </div>
 	    <!-- 如果需要分页器 -->
 	    <div class="swiper-pagination"></div>
@@ -221,17 +222,101 @@
     
     <!--底部-->
     <div class="foot">
-    	<div class="left_foot">
-    		<p>成都易植园艺有限公司</p>
-    		<p>地址：高新区瞻远西一街（高新区天府大道中段）</p>
-    		<p>电话：028-58697845</p>
-    		<p>邮箱：yixioaopmo@qq.com</p>
+    	<div class="container">
+    		<div class="left_foot">
+	    		<p>成都易植园艺有限公司</p>
+	    		<p>地址：高新区瞻远西一街（高新区天府大道中段）</p>
+	    		<p>电话：028-58697845</p>
+	    		<p>邮箱：yixioaopmo@qq.com</p>
+	    	</div>
+	    	<div class="right_foot">
+	    		<span class="name">友情链接</span>
+	    		<a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a>
+	    	</div>
     	</div>
-    	<div class="right_foot">
-    		<span class="name">友情链接</span>
-    		<a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a>
+    	<div class="foot_company">
+    		<p>川ICP备13007738号 川公网安备11010502023922 www.yizhi.com ；成都易植园艺有限公司  © 2003-2016 YLZHI.COM 版权所有</p>
     	</div>
     </div>
     <!--底部-->
+    
+    <!--悬浮-->
+    <div class="suspend hidden-xs">
+    	<ul>
+    		<li class="need_btn"><span>需求<br />提交</span></li>
+    		<li class="wechat"><img src="assets/images/1_07.png"/>
+    		<div class="wechat_box">
+    			<img src="assets/images/1_09.png"/>
+    			<span>官方微信</span>
+    		</div>
+    		</li>
+    		<li id="go_top"><img src="assets/images/1_08.png"/></li>
+    	</ul>
+    </div>
+    <!--悬浮-->
+    
+    <!--需求弹框-->
+    <div class="need_box">
+    	<div class="need_bg"></div>
+    	<div class="box">
+    		<div class="head">
+    			<span>免费预约</span>
+    			<img src="assets/images/1_10.png" class="close"/>
+    		</div>
+    		<div class="content">
+    			<ul>
+    				<li>
+    					<span class="name">业务:</span>
+    					<label class="check_box">
+    						<input type="checkbox" />
+    						植物租赁
+    					</label>
+    					<label class="check_box">
+    						<input type="checkbox" />
+    						植物租赁
+    					</label>
+    					<label class="check_box">
+    						<input type="checkbox" />
+    						植物租赁
+    					</label>
+    				</li>
+    				<li>
+    					<span class="name">面积:</span>
+    					<label class="check_box">
+    						<input type="checkbox" />
+    						100㎡以上
+    					</label>
+    					<label class="check_box">
+    						<input type="checkbox" />
+    						100㎡-1000㎡
+    					</label>
+    					<label class="check_box">
+    						<input type="checkbox" />
+    						1000㎡以上
+    					</label>
+    				</li>
+    				<li>
+    					<span class="name">姓名：</span><input type="text"class="text"/>
+    					<span class="name">电话：</span><input type="text"class="text"/>
+    				</li>
+    				<li>
+    					<span class="name">公司：</span><input type="text"class="text"/>
+    					<span class="name">地址：</span><input type="text"class="text"/>
+    				</li>
+    				<li>
+    					<input type="submit"  value="申请提交"  class="submit"/>
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
+    </div>
+    <!--需求弹框-->
+    
+    <script type="text/javascript" src="assets/js/check.js" ></script>
+    <script>
+    	$(document).ready(function () {
+    		$(".check_box").CheckBox();
+    	})
+    </script>
   </body>
 </html>
