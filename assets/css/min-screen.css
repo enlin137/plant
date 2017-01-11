@@ -1,3 +1,6 @@
+@media only screen and (max-width: 1200px) {
+  .news_box .box ul li .txt .tag {
+    margin-top: 20px; } }
 @media only screen and (max-width: 992px) {
   .swiper-button-next, .swiper-button-prev {
     width: 40px;
@@ -5,7 +8,10 @@
     margin-top: -45px; }
 
   .swiper-pagination-bullet {
-    width: 50px; } }
+    width: 50px; }
+
+  .index_news .box .txt .tag {
+    margin-top: 20px; } }
 @media only screen and (max-width: 768px) {
   .swiper-pagination-bullet {
     width: 40px;
@@ -77,20 +83,84 @@
     color: #ff0000;
     font-size: 16px; }
 
-  .index_news .box .txt {
+  .index_news .box .txt, .news_box .box .txt {
     width: 94%; }
-    .index_news .box .txt .name {
+    .index_news .box .txt .name, .news_box .box .txt .name {
       width: 100%; }
-    .index_news .box .txt .time {
+    .index_news .box .txt .time, .news_box .box .txt .time {
       float: left;
       margin-top: 10px; }
-    .index_news .box .txt .tag {
-      margin-top: 20px; }
+    .index_news .box .txt .tag, .news_box .box .txt .tag {
+      margin-top: 20px;
+      text-overflow: clip;
+      overflow: inherit;
+      -webkit-line-clamp: inherit;
+      font-size: 14px; }
 
   .index_tel span {
-    font-size: 40px; } }
+    font-size: 40px; }
+
+  .all_foot {
+    margin-bottom: 98px; }
+
+  .foot_768 {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 98px;
+    background-color: #FFFFFF;
+    overflow: hidden; }
+    .foot_768 ul {
+      width: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0; }
+    .foot_768 li {
+      width: 33.33%;
+      float: left;
+      text-align: center;
+      color: #666666;
+      font-size: 18px;
+      padding: 0;
+      margin: 0; }
+      .foot_768 li a {
+        color: #666666;
+        font-size: 18px; }
+      .foot_768 li img {
+        display: block;
+        margin: 12px auto; }
+
+  .page_768 {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    overflow: hidden; }
+    .page_768 a {
+      width: 60px;
+      height: 30px;
+      display: inline-block;
+      margin: 5px;
+      border: #dddddd 1px solid;
+      text-align: center;
+      line-height: 30px;
+      color: #666666; } }
 @media only screen and (max-width: 500px) {
   .index_business .box li {
-    width: 100%; } }
+    width: 100%; }
+
+  .all_foot {
+    margin-bottom: 80px; }
+
+  .foot_768 {
+    height: 80px; }
+    .foot_768 li {
+      font-size: 16px; }
+      .foot_768 li a {
+        font-size: 16px; }
+      .foot_768 li img {
+        width: 30px;
+        height: 30px;
+        margin: 8px auto; } }
 
 /*# sourceMappingURL=min-screen.css.map */

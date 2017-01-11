@@ -5,6 +5,11 @@
   }
 }
 $baseColor:#529824;
+@include max-width(1200px){
+.news_box .box ul li .txt .tag{
+    margin-top: 20px;
+}
+}
 @include max-width(992px){
 .swiper-button-next, .swiper-button-prev{
     width: 40px;
@@ -13,6 +18,15 @@ $baseColor:#529824;
 }
 .swiper-pagination-bullet{
     width: 50px;
+}
+.index_news{
+    .box{
+        .txt{
+            .tag{
+                margin-top: 20px;
+            }
+        }
+    }
 }
 }
 
@@ -110,7 +124,7 @@ $baseColor:#529824;
           }
     }
     
-    .index_news{
+    .index_news,.news_box{
         .box{
            .txt{
                 width: 94%;
@@ -123,6 +137,10 @@ $baseColor:#529824;
                 }
                 .tag{
                     margin-top: 20px;
+                    text-overflow:clip;
+                    overflow:inherit;
+                    -webkit-line-clamp:inherit;
+                    font-size: 14px;
                 }
             } 
         }      
@@ -132,10 +150,82 @@ $baseColor:#529824;
             font-size: 40px;
         }
     }
+    
+//  768以下底部
+.all_foot{
+    margin-bottom: 98px;
+}
+.foot_768{
+   width: 100%;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   height: 98px;
+   background-color: #FFFFFF;
+   overflow: hidden;
+   ul{
+       width: 100%;
+       overflow: hidden;
+       margin: 0;
+       padding: 0;
+   }
+   li{
+       width: 33.33%;
+       float: left;
+       text-align: center;
+       color: #666666;
+       font-size: 18px;
+       padding: 0;
+       margin: 0;
+       a{
+           color: #666666;
+           font-size: 18px;
+       }
+       img{
+           display: block;
+           margin: 12px auto;
+       }
+   }
+}
+
+.page_768{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    overflow: hidden;
+    a{
+        width: 60px;
+        height: 30px;
+        display: inline-block;
+        margin:5px;
+        border: #dddddd 1px solid;
+        text-align: center;
+        line-height: 30px;
+        color: #666666;
+    }
+}
+
 }
 
 @include max-width(500px){
     .index_business .box li{
         width: 100%;
+    }
+    .all_foot{
+        margin-bottom: 80px;
+    }
+    .foot_768{
+        height: 80px;
+        li{
+            font-size: 16px;
+            a{
+                font-size: 16px;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                margin: 8px auto;
+            }
+        }
     }
 }

@@ -9,6 +9,7 @@ $(document).ready(function () {
     
     // 如果需要分页器
     pagination: '.swiper-pagination',
+    paginationClickable :true,
     
     // 如果需要前进后退按钮
     nextButton: '.swiper-button-next',
@@ -32,7 +33,7 @@ $(document).ready(function () {
 	});
 	
 	//返回顶部
-	$("#go_top").click(function () {
+	$("#go_top,#go_top2").click(function () {
 		$("body").animate({scrollTop:0},500)
 	});
 	
@@ -42,5 +43,19 @@ $(document).ready(function () {
 	});
 	$(".need_box .close,.need_bg").click(function () {
 		$(".need_box").hide();
+	});
+	
+	//	产品页左侧分类
+	$(".left_nav .pro ul li span").click(function  () {
+		var hason = $(this).hasClass('on');
+		if(!hason){
+			$(this).siblings().show(200);
+			$(this).addClass('on');
+		}
+		else{
+			$(this).siblings().hide(200);
+			$(this).removeClass('on');
+		}
+		
 	})
 })

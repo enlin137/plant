@@ -36,36 +36,38 @@
     					<span class="icon-bar"></span>
     					<span class="icon-bar"></span>
     			</button>
-    			<a href="#" class="need navbar-toggle head_need">需求提交</a>
+    			<a href="javascript:void(0);" class="need navbar-toggle head_need need_btn">需求提交</a>
     			<div class="navbar-brand nav_logo">   				
-    				<a href="#"><img src="assets/images/logo.png"/></a>
+    				<a href="index.html"><img src="assets/images/logo.png"/></a>
     			</div>
     		</div>
     		<div class="collapse navbar-collapse nav_box" id="nav">
     				<ul class="nav navbar-nav">
-    					<li class="on"><a href="#">首页</a></li>
-    					<li><a href="javascript:void(0);">主营业务<span class="icon visible-xs-inline-block">∨</span></a>
+    					<li class="on"><a href="index.html">首页</a></li>
+    					<li><a href="javascript:void(0);" class="visible-xs">主营业务<span class="icon visible-xs-inline-block">∨</span></a>
+    						  <a href="product.html" class="hidden-xs">主营业务</a>
     						<dl>
-    							<dd><a href="#">植物租赁</a></dd>
-    							<dd><a href="#">植物租赁</a></dd>
-    							<dd><a href="#">植物租赁</a></dd>
-    							<dd><a href="#">植物租赁</a></dd>
+    							<dd><a href="product.html">植物租赁</a></dd>
+    							<dd><a href="product.html">植物租赁</a></dd>
+    							<dd><a href="product.html">植物租赁</a></dd>
+    							<dd><a href="product.html">植物租赁</a></dd>
     						</dl>
     					</li>
-    					<li><a href="javascript:void(0);">产品展示<span class="icon visible-xs-inline-block">∨</span></a>
+    					<li><a href="javascript:void(0);" class="visible-xs">产品展示<span class="icon visible-xs-inline-block">∨</span></a>
+    						  <a href="product.html" class="hidden-xs">产品展示</a>
     						<dl>
-    							<dd><a href="#">sads</a></dd>
-    							<dd><a href="#">sdsd</a></dd>
-    							<dd><a href="#">sdsd</a></dd>
-    							<dd><a href="#">sdsd</a></dd>
+    							<dd><a href="product.html">sads</a></dd>
+    							<dd><a href="product.html">sdsd</a></dd>
+    							<dd><a href="product.html">sdsd</a></dd>
+    							<dd><a href="product.html">sdsd</a></dd>
     						</dl>
     					</li>
-    					<li><a href="#">成功案例</a></li>
-    					<li><a href="#">新闻中心</a></li>
+    					<li><a href="product.html">成功案例</a></li>
+    					<li><a href="news.html">新闻中心</a></li>
     					<li class="hidden-sm"><a href="#">公司简介</a></li>
     					<li class="hidden-sm"><a href="#">联系我们</a></li>   					
     				</ul>
-    				<a href="#" class="need hidden-xs">需求提交</a>
+    				<a href="javascript:void(0);" class="need hidden-xs need_btn">需求提交</a>
     		</div>
     		
     	</div>
@@ -221,7 +223,7 @@
     <!--联系电话-->
     
     <!--底部-->
-    <div class="foot">
+    <div class="all_foot">
     	<div class="container">
     		<div class="left_foot">
 	    		<p>成都易植园艺有限公司</p>
@@ -234,7 +236,7 @@
 	    		<a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a><a href="#">成都婚纱摄影</a>
 	    	</div>
     	</div>
-    	<div class="foot_company">
+    	<div class="foot_company hidden-xs">
     		<p>川ICP备13007738号 川公网安备11010502023922 www.yizhi.com ；成都易植园艺有限公司  © 2003-2016 YLZHI.COM 版权所有</p>
     	</div>
     </div>
@@ -258,7 +260,7 @@
     <!--需求弹框-->
     <div class="need_box">
     	<div class="need_bg"></div>
-    	<div class="box">
+    	<div class="box hidden-xs">
     		<div class="head">
     			<span>免费预约</span>
     			<img src="assets/images/1_10.png" class="close"/>
@@ -266,7 +268,7 @@
     		<div class="content">
     			<ul>
     				<li>
-    					<span class="name">业务:</span>
+    					<span class="name">业务：</span>
     					<label class="check_box">
     						<input type="checkbox" />
     						植物租赁
@@ -281,7 +283,7 @@
     					</label>
     				</li>
     				<li>
-    					<span class="name">面积:</span>
+    					<span class="name">面积：</span>
     					<label class="check_box">
     						<input type="checkbox" />
     						100㎡以上
@@ -303,14 +305,66 @@
     					<span class="name">公司：</span><input type="text"class="text"/>
     					<span class="name">地址：</span><input type="text"class="text"/>
     				</li>
-    				<li>
+    				<div class="submit_box">
     					<input type="submit"  value="申请提交"  class="submit"/>
+    				</div>
+    			</ul>
+    		</div>
+    	</div>
+    	
+    	<div class="box_768 visible-xs">
+    		<div class="head">
+    			<span>免费预约</span>
+    			<img src="assets/images/1_10.png" class="close"/>
+    		</div>
+    		<div class="content">
+    			<ul>
+    				<li>
+    					<span class="name">业务：</span>
+    					<select class="select">
+    						<option>植物租赁</option>
+    						<option>植物租赁</option>
+    						<option>植物租赁</option>
+    					</select>
     				</li>
+    				<li>
+    					<span class="name">面积：</span>
+    					<select class="select">
+    						<option>100㎡以上</option>
+    						<option>100㎡-1000㎡</option>
+    						<option>1000㎡以上</option>
+    					</select>
+    				</li>
+    				<li>
+    					<span class="name">姓名：</span><input type="text"class="text"/>   					
+    				</li>
+    				<li>
+    					<span class="name">电话：</span><input type="text"class="text"/>
+    				</li>
+    				<li>
+    					<span class="name">公司：</span><input type="text"class="text"/>
+    				</li>
+    				<li>
+    					<span class="name">地址：</span><input type="text"class="text"/>
+    				</li>
+    				<div class="submit_box">
+    					<input type="submit"  value="申请提交"  class="submit"/>
+    				</div>
     			</ul>
     		</div>
     	</div>
     </div>
     <!--需求弹框-->
+    
+    <!--768以下底部-->
+    <div class="foot_768 visible-xs">
+    	<ul>
+    		<li><a href="tel:123456"><img src="assets/images/1_13.png"/>手机</a></li>
+    		<li class="need_btn"><img src="assets/images/1_14.png"/>需求提交</li>
+    		<li id="go_top2"><img src="assets/images/1_15.png"/>顶部</li>
+    	</ul>
+    </div>
+    <!--768以下底部-->
     
     <script type="text/javascript" src="assets/js/check.js" ></script>
     <script>
