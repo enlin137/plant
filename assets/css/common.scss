@@ -6,16 +6,20 @@ body{
 }
 li{list-style: none;}
 a:hover,a:focus{text-decoration: none;}
+.row{
+    overflow: hidden;
+}
 .navbar{
-    min-height: 100px;
+    min-height: 80px;
     background-color: #FFFFFF;
+    box-shadow: #EEEEEE 0px 0px 20px;
     border: none;
     .container{
         padding: 0;
     }
 }
 .nav_logo{
-    padding: 16px 15px;
+    padding: 5px 15px;
 }
 .navbar-inverse .head_need{
     padding: 0;
@@ -37,12 +41,12 @@ a:hover,a:focus{text-decoration: none;}
       li{
           width: 100px;
           text-align: center;
-          height: 100px;
+          height: 80px;
           margin: 0 5px;
           position: static;         
           >a{
               padding: 0;
-              line-height: 100px;
+              line-height: 80px;
               color: #222222;
               font-size: 18px;
           }
@@ -53,6 +57,7 @@ a:hover,a:focus{text-decoration: none;}
               width: 100%;
               height: 60px;              
               background-color: #f9f9f9;
+              opacity: 0.7;
               dd{
                   width: 80px;
                   height: 60px;
@@ -92,11 +97,14 @@ a:hover,a:focus{text-decoration: none;}
     .need{
           width: 100px;
           text-align: center;
-          height: 100px;
-          line-height: 100px;
+          height: 80px;
+          line-height:80px;
           margin: 0 5px;
           color: #ff0000;
           font-size: 18px;
+      }
+      .need:hover{
+          font-size: 20px;
       }
 }
 
@@ -106,8 +114,9 @@ a:hover,a:focus{text-decoration: none;}
     width: 100%; 
     position: relative; 
     overflow: hidden;
-    margin-top: 100px;
-    overflow: hidden;   
+    margin-top: 80px;
+    overflow: hidden;
+    max-height: 350px;   
     .swiper-slide{
         img{
             width: 100%;
@@ -115,29 +124,43 @@ a:hover,a:focus{text-decoration: none;}
         }
     }  
 }
-.swiper-pagination-bullet{
+.swiper-pagination{
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+}
+.swiper-pagination-switch{
     width: 60px;
     border-radius:5px ;
+    height: 8px;
+    z-index: 99999;
     background-color: #FFFFFF;
     opacity: 1;
+    display: inline-block;
+    margin: 0 10px;
 }
-.swiper-pagination-bullet-active{
+.swiper-active-switch{
     background-color: $baseColor;
 }
-.swiper-button-prev{
+.banner-prev{
     background: url(../images/1_05.jpg) no-repeat;
+    left: 20px;
 }
-.swiper-button-next{
+.banner-next{
     background: url(../images/1_06.jpg) no-repeat;
+    right: 20px;
 }
-.swiper-button-next, .swiper-button-prev{
+.banner-prev, .banner-next{
+    position: absolute;
+    top: 50%;
     width: 60px;
     height: 120px;
     margin-top: -60px;
     opacity: 0.5;
     background-size: 100% 100%;
 }
-.swiper-button-next:hover, .swiper-button-prev:hover{
+.banner-next:hover, .banner-prev:hover{
     opacity: 1;
 }
 
@@ -149,7 +172,7 @@ a:hover,a:focus{text-decoration: none;}
 .index_business{
     width: 100%;
     overflow: hidden;
-    margin: 65px 0;
+    margin: 60px 0;
     .title{
         width: 100%;
         text-align: center;
@@ -158,18 +181,19 @@ a:hover,a:focus{text-decoration: none;}
             font-size: 28px;
             display: block;
             font-weight: bold;
+            line-height: 2.5;
         }
         .english{
             color: $baseColor;
             font-size: 16px;
             display: block;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
         .txt{
-            max-width: 1200px;
+            max-width: 780px;
             margin: 0 auto;
             color: #333333;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 2;
             padding: 0 20px;
         }
@@ -177,10 +201,13 @@ a:hover,a:focus{text-decoration: none;}
     .box{
         max-width: 1200px;
         margin: 0 auto;
-        margin-top: 60px;
+        margin-top: 40px;
         .row{
             margin-left: -30px;
             margin-right: 15px;
+        }
+        ul{
+            overflow: hidden;
         }
         li{
             margin-bottom: 30px;
@@ -188,11 +215,21 @@ a:hover,a:focus{text-decoration: none;}
         .pic{
             width: 100%;
             text-align: center;
-            border-radius:50% ;
-            overflow: hidden;
+            border-radius:50%;
+            
             img{
+                border-radius:50% ;
                 max-width: 100%;
+                margin-top: 20px;
             }
+        }
+        li:hover{
+            .pic{
+                transform: scale(1.1);            
+                img{
+                   box-shadow: #999999 0px 10px 30px; 
+                }
+            }   
         }
         .txt{
             width: 100%;
@@ -214,6 +251,7 @@ a:hover,a:focus{text-decoration: none;}
         width: 100%;
         overflow: hidden;
         text-align: center;
+        margin-top: 40px;
         .link{
             width: 160px;
             height: 40px;
@@ -224,6 +262,11 @@ a:hover,a:focus{text-decoration: none;}
             color: #999999;
             font-size: 14px;
         }
+        .link:hover{
+            background-color: #e2e2e2;
+            border: none;
+            color: #999999;
+        }
     }
 }
 
@@ -231,16 +274,17 @@ a:hover,a:focus{text-decoration: none;}
 .index_brand{
     width: 100%;   
     background-color: #f6f6f6;
+    padding: 60px 0;
     overflow: hidden;
     .title{
         width: 100%;
         text-align: center;
-        margin: 60px 0;
+        margin-bottom: 60px;
         overflow: hidden;
         .name{
             color: #333333;
             font-size: 26px;
-            line-height: 2;
+            line-height: 2.5;
         }
         .tag{
             color: #333333;
@@ -252,15 +296,22 @@ a:hover,a:focus{text-decoration: none;}
         max-width: 1200px;
         margin: 0 auto;
         overflow: hidden;
+        margin-bottom: 30px;
         .row{
             margin-left: -30px;
             margin-right: 15px;
         }
         li{ 
-            margin-bottom: 15px;  
+            margin-bottom: 30px;  
             text-align: center;  
             img{
                 max-width: 100%;
+            }
+        }
+        li:hover{
+            img{
+                transform: perspective(2000px) rotateX(360deg);
+                transition: transform 1s;
             }
         }
     }
@@ -268,16 +319,21 @@ a:hover,a:focus{text-decoration: none;}
         width: 100%;
         overflow: hidden;
         text-align: center;
-        margin: 30px 0;
+        margin-top: 40px;
         .link{
             width: 160px;
             height: 40px;
             border-radius:50px ;
-            background-color: #e2e2e2;
+            border: #cccccc 1px solid;
             line-height: 40px;
             display: inline-block;
             color: #999999;
             font-size: 14px;
+        }
+        .link:hover{
+            background-color: #e2e2e2;
+            border: none;
+            color: #999999;
         }
     }
 }
@@ -294,7 +350,7 @@ a:hover,a:focus{text-decoration: none;}
         .name{
             font-size: 28px;
             font-weight: bold;
-            line-height: 2;
+            line-height: 2.5;
         }
         .tag{
             font-size: 16px;
@@ -309,18 +365,20 @@ a:hover,a:focus{text-decoration: none;}
         .pic{
             width: 25%;
             float: left;
+            border-radius:6px;
+            overflow: hidden;
             img{
                 width: 100%;
             }
         }
         .txt{
-            width: 70%;
+            width: 67%;
             float: left;
-            margin-left:3%;
+            margin-left:6%;
             overflow: hidden;
             .name{
                 color: #333333;
-                font-size: 20px;
+                font-size: 18px;
                 float: left;
             }
             .name:hover{
@@ -329,12 +387,13 @@ a:hover,a:focus{text-decoration: none;}
             .time{
                 color: #666666;
                 float: right;
-                font-size: 20px;
+                font-size: 18px;
             }
             .tag{
                 width: 100%;
                 float: left;
                 margin-top: 40px;
+                font-size: 14px;
                 line-height: 2;
                 overflow : hidden;
                 text-overflow: ellipsis;
@@ -348,6 +407,7 @@ a:hover,a:focus{text-decoration: none;}
         width: 100%;
         overflow: hidden;
         text-align: center;
+        margin-top: 40px;
         .link{
             width: 160px;
             height: 40px;
@@ -357,6 +417,11 @@ a:hover,a:focus{text-decoration: none;}
             display: inline-block;
             color: #999999;
             font-size: 14px;
+        }
+        .link:hover{
+            background-color: #e2e2e2;
+            border: none;
+            color: #999999;
         }
     }
 }
@@ -371,10 +436,11 @@ a:hover,a:focus{text-decoration: none;}
         display: inline-block;
         vertical-align: middle;
         margin-right: 15px;
+        max-width: 60px;
     }
     span{
         color: #FFFFFF;
-        font-size: 80px;
+        font-size: 60px;
         display: inline-block;
         vertical-align: middle;
     }
@@ -391,7 +457,7 @@ a:hover,a:focus{text-decoration: none;}
         margin-right: 40px;
         p{
             color: #ffffff;
-            font-size: 16px;
+            font-size: 14px;
         }
     }
     .right_foot{
@@ -401,14 +467,17 @@ a:hover,a:focus{text-decoration: none;}
         .name{
             display: block;
             color: #ffffff;
-            font-size: 16px;
+            font-size: 14px;
         }
         a{
             color: #FFFFFF;
-            font-size: 14px;
+            font-size: 12px;
             display: inline-block;
             margin-right: 15px;
             margin-top: 15px;
+        }
+        a:hover{
+            text-decoration: underline;
         }
     }
     .foot_company{
@@ -426,7 +495,7 @@ a:hover,a:focus{text-decoration: none;}
 //悬浮
 .suspend{
     position: fixed;
-    top: 45%;
+    top: 65%;
     right: 20px;
     z-index: 9999;
     li{
@@ -701,7 +770,7 @@ a:hover,a:focus{text-decoration: none;}
             background-color: #EEEEEE;
             span{
                 color: #333333;
-                font-size: 18px;
+                font-size: 16px;
                 padding-left: 20px;
             }
         }
@@ -720,7 +789,7 @@ a:hover,a:focus{text-decoration: none;}
                     display: block;
                     background: url(../images/1_16.png) no-repeat left;
                     color: #333333;
-                    font-size: 16px;
+                    font-size: 14px;
                     padding-left: 15%;
                     border-bottom: #eeeeee 1px solid;
                 }
@@ -740,10 +809,15 @@ a:hover,a:focus{text-decoration: none;}
                         line-height: 45px;
                         border-bottom: #eeeeee 1px solid;
                         color: #333333;
-                        font-size: 16px;
+                        font-size: 12px;
                     }
                     dd.on{
                         color: $baseColor;
+                        font-size: 14px;
+                    }
+                    dd:hover{
+                        color: $baseColor;
+                        font-size: 14px;
                     }
                 }
             }
@@ -762,7 +836,7 @@ a:hover,a:focus{text-decoration: none;}
             background-color: #EEEEEE;
             span{
                 color: #333333;
-                font-size: 18px;
+                font-size: 16px;
                 padding-left: 20px;
             }
         }
@@ -783,10 +857,15 @@ a:hover,a:focus{text-decoration: none;}
                     width:100%;
                     display: block;
                     color: #666;
-                    font-size: 16px;
+                    font-size: 14px;
                     text-overflow: ellipsis;
                     overflow: hidden;
                     white-space: nowrap;                    
+                }
+            }
+            li:hover{
+                a{
+                    color: $baseColor;
                 }
             }
             li:last-child{
@@ -802,7 +881,7 @@ a:hover,a:focus{text-decoration: none;}
                 background: none;
                 height: auto;
                 color: #666;
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }
@@ -817,7 +896,6 @@ a:hover,a:focus{text-decoration: none;}
         line-height: 50px;
         color: #333333;
         font-size: 16px;
-        font-weight: bold;
         border-bottom: #cccccc 1px solid;
         a{
            color: #333333;
@@ -828,22 +906,29 @@ a:hover,a:focus{text-decoration: none;}
         ul{
             padding: 0;
             li{
-                margin-bottom: 10px;
+                margin: 15px 0;
                 .pic{
                     width: 100%;
-                    border: #cccccc 1px solid;
+                    border: #EEEEEE 1px solid;
+                    overflow: hidden;
                     img{
                         max-width: 100%;
                     }
                 }
                 .txt{
                     width: 100%;
+                    margin-top: 20px;
                     padding: 10px 0;
                     text-align: center;
                     a{
                         color: #333333;
                         font-size: 14px;
                     }
+                }
+            }
+            li:hover{
+                .pic{
+                    box-shadow: #CCCCCC 0px 3px 10px;
                 }
             }
         }
@@ -938,11 +1023,16 @@ a:hover,a:focus{text-decoration: none;}
             background-position: center;
         }
     }
-    .swiper-pagination{
-        .swiper-pagination-bullet{
+    .swiper-pagination2{
+        width: 100%;
+        position: absolute;
+        bottom: 15px;
+        text-align: center;
+        .swiper-pagination-switch{
             width: 8px;
             height: 8px;
             border-radius:50%;
+            margin: 0 5px;
         }
     }  
 }
@@ -964,10 +1054,12 @@ a:hover,a:focus{text-decoration: none;}
             display: inline-block;
             vertical-align: top;
             padding: 0;
+            line-height: 2;
         }
         span{
             display: inline-block;
             padding: 0;
+            line-height: 2;
         }
     }
 }
@@ -1025,7 +1117,6 @@ a:hover,a:focus{text-decoration: none;}
         line-height: 50px;
         color: #333333;
         font-size: 16px;
-        font-weight: bold;
         border-bottom: #cccccc 1px solid;
         a{
            color: #333333;
@@ -1047,16 +1138,18 @@ a:hover,a:focus{text-decoration: none;}
                 .pic{
                     border: #CCCCCC 1px solid;
                     padding: 0;
-                    
+                    border-radius:6px ;
+                    overflow: hidden;
                     img{
                         width: 100%;
                     }
                 }
                 .txt{
                     overflow: hidden;
+                    padding-left: 60px;
                     .name{
                         color: #333333;
-                        font-size: 20px;
+                        font-size:16px;
                         float: left;
                     }
                     .name:hover{
@@ -1065,12 +1158,13 @@ a:hover,a:focus{text-decoration: none;}
                     .time{
                         color: #666666;
                         float: right;
-                        font-size: 20px;
+                        font-size:16px;
                     }
                     .tag{
                         width: 100%;
                         float: left;
                         margin-top: 40px;
+                        font-size: 14px;
                         line-height: 2;
                         overflow : hidden;
                         text-overflow: ellipsis;

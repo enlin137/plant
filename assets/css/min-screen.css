@@ -2,7 +2,7 @@
   .news_box .box ul li .txt .tag {
     margin-top: 20px; } }
 @media only screen and (max-width: 992px) {
-  .swiper-button-next, .swiper-button-prev {
+  .banner-prev, .banner-next {
     width: 40px;
     height: 90px;
     margin-top: -45px; }
@@ -13,9 +13,12 @@
   .index_news .box .txt .tag {
     margin-top: 20px; } }
 @media only screen and (max-width: 768px) {
-  .swiper-pagination-bullet {
+  .swiper-pagination-switch {
     width: 40px;
     height: 5px; }
+
+  .swiper-pagination {
+    bottom: 10px; }
 
   .navbar-inverse .btns {
     margin-top: 23px;

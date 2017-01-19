@@ -5,17 +5,23 @@ $(document).ready(function () {
 	var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     autoplay:3000,
-    autoplayDisableOnInteraction : false,
-    
+    grabCursor: true,
+    paginationClickable: true,
+    calculateHeight : true,
     // 如果需要分页器
     pagination: '.swiper-pagination',
     paginationClickable :true,
     
     // 如果需要前进后退按钮
     nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    
-  });        
+    prevButton: '.swiper-button-prev',   
+ });
+  $('.banner-prev').click(function(){
+		mySwiper.swipePrev(); 
+});
+	$('.banner-next').click(function(){
+		mySwiper.swipeNext(); 
+	})
 	//导航点击
 	$(".navbar-nav li").click(function () {
 		var acitve = $(this).hasClass('active_nav');
